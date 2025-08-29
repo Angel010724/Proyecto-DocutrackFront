@@ -87,8 +87,10 @@ const LoginForm: React.FC = () => {
                 return;
             }
 
-            console.log('✅ Usuario logueado:', data);
-            alert('Login exitoso! (En producción redirigiría al dashboard)');
+        console.log('✅ Usuario logueado:', data);
+        // Redirigir al dashboard
+        router.push('/dashboard');
+
             
         } catch (err) {
             console.error(err);
